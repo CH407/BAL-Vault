@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imperial Vault (BAL)</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Imperial Vault (BAL)</h1>
+        <p>Claim your BAL rewards.</p>
+
+        <button onclick="connectWallet()">Connect Wallet</button>
+        <div id="wallet-address"></div>
+
+        <h3>Claim BAL Rewards</h3>
+        <button onclick="claimBAL()">Claim BAL</button>
+        <div id="status"></div>
+
+        <hr />
+        <h3>Gas Reimbursement Tracker</h3>
+        <button onclick="getTotalGasReimbursed()">Check Total MATIC Reimbursed</button>
+        <div id="gas-tracker-status"></div>
+
+        <h3>Vault MATIC Balance</h3>
+        <button onclick="checkVaultBalance()">Check MATIC Balance</button>
+        <div id="vault-balance-status"></div>
+    </div>
+</body>
+</html>
